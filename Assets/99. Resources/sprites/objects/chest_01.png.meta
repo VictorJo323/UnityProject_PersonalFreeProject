@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c9f0845323a854eff8e01e25b6dfd6f8
+guid: 5427a9fc829da45aab1dbd5c8aede02c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f647e04744eb94b65b1c41b947b65781
-      internalID: -816327998
+      spriteID: 8a01791a1057b450fb3876159fcbadc7
+      internalID: -1102254149
       vertices: []
       indices: 
       edges: []
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fee0e7cb98f14193b179c16e1ac9a45
-      internalID: -1161764366
+      spriteID: 2aef32f98bb4f4863a6ab898b6fa0ee9
+      internalID: 715124238
       vertices: []
       indices: 
       edges: []
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f6f59daa6e1143aa83f67b928454fb7
-      internalID: -140595081
+      spriteID: b843a35e7dc904aba8702808775ec77b
+      internalID: -1568108995
       vertices: []
       indices: 
       edges: []
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c6ffde94d2d446d98b3db9db799c085
-      internalID: 1418442618
+      spriteID: a84bb1df822454838ae34a3a7affab62
+      internalID: 1902718629
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chest_01_0: -816327998
-      chest_01_1: -1161764366
-      chest_01_2: -140595081
-      chest_01_3: 1418442618
+      chest_01_0: -1102254149
+      chest_01_1: 715124238
+      chest_01_2: -1568108995
+      chest_01_3: 1902718629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
