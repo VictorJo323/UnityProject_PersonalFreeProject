@@ -82,7 +82,7 @@ public class Damageable : MonoBehaviour
 
         if (damage < 0)
         {
-            damage = 0;
+            damage = 1;
         }
 
         return damage;
