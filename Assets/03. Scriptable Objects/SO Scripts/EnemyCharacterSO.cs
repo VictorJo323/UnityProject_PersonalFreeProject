@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "Character", menuName = "Player/Character", order =0)]
-public class PlayerCharacterSO : ScriptableObject
+[CreateAssetMenu(fileName = "Enemy_", menuName = "Enemy/Character", order = 0)]
+public class EnemyCharacterSO : ScriptableObject
 
 {
     public int level;
@@ -14,6 +14,6 @@ public class PlayerCharacterSO : ScriptableObject
     public int hp;
     public int mp;
 
-    public int initGold;
-    private int expToLvUp = 100;
+    public int goldDrop;
+    public int expDrop;
 }

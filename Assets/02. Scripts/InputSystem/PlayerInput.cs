@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     public Rigidbody2D rigidbody;
     public float movementSpeed = 3f;
     public InputController playerController;
+    public GameObject uiPanel;
 
     Vector2 moveDirection = Vector2.zero;
     private InputAction movement;
@@ -59,7 +60,14 @@ public class PlayerInput : MonoBehaviour
 
     private void ToggleInventoryWindow(InputAction.CallbackContext context)
     {
-        Debug.Log("Inventory Open!");  // TODO - Make Inventory Window Open
+        if(uiPanel.activeSelf)
+        {
+            uiPanel.SetActive(false);
+        }
+        else
+        {
+            uiPanel.SetActive(true);
+        }
     }
 
 }
