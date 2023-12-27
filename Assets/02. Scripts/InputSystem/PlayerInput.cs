@@ -57,7 +57,6 @@ public class PlayerInput : MonoBehaviour
     {
         Debug.Log("Attack!");   //TODO - Make Animation Setting
     }
-
     private void ToggleInventoryWindow(InputAction.CallbackContext context)
     {
         if(uiPanel.activeSelf)
@@ -69,5 +68,4 @@ public class PlayerInput : MonoBehaviour
             uiPanel.SetActive(true);
         }
     }
-
 }

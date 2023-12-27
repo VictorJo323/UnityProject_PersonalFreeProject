@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e956961ffc6a743799632b9535c86bc5, type: 3}
   m_Name: Character
   m_EditorClassIdentifier: 
+  charName: Player
+  charDescription: A normal Player who just started the game.
   level: 1
-  str: 5
+  atk: 0
   def: 5
   foc: 5
   hp: 100
   mp: 20
+  crit: 0
+  agi: 0
   initGold: 500
+  skills: []

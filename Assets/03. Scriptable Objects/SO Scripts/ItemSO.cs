@@ -16,6 +16,9 @@ public enum ItemType
 public class ItemSO : ScriptableObject
 {
     public ItemType type;
+    public string itemName;
+    public string itemDescription;
+    public Sprite itemIcon;
     public int plusHP;
     public int plusMP;
     public int plusAtk;
@@ -23,4 +26,5 @@ public class ItemSO : ScriptableObject
     public int plusFoc;
     public int plusCrit;
     public int plusAgi;
+    public int price;
 }
