@@ -4,13 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneHandler : MonoBehaviour
 {
-    public void StartToMainScene()
+    public void ToMainScene()
     {
         SceneManager.LoadScene("MainScene"); 
     }
 
-    public void MainToStartScene()
+    public void ToStartScene()
     {
         SceneManager.LoadScene("StartScene"); 
+    }
+
+    public void Run()
+    {
+        Vector2 savedPosition = GameManager.Instance.LoadPosition();
     }
 }
