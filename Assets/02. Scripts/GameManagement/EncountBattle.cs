@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,6 @@ public class EncountBattle : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             Debug.Log("들어감");
-            lastPosition = collision.transform.position;
             if (battleCoroutine == null)
             {
                 StartCoroutine(BattleCoroutine());
@@ -27,8 +27,11 @@ public class EncountBattle : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             Debug.Log("나감");
-            StopCoroutine(BattleCoroutine());
-            battleCoroutine = null;
+            if (battleCoroutine != null)
+            {
+                StopCoroutine(battleCoroutine);
+                battleCoroutine = null;
+            }
         }
     }
 
@@ -36,17 +39,29 @@ public class EncountBattle : MonoBehaviour
     {
         while(true)
         {
-            if(IsBattleOn())
-            { 
-                yield break; 
-            }
-            float time = Random.Range(1f, 2f);
+            float time = UnityEngine.Random.Range(3f, 6f);
             yield return new WaitForSeconds(time);
+            UpdatePositionInfo();
+
+            if (IsBattleOn())
+            {
+                yield break;
+            }
         }
     }
+
+    private void UpdatePositionInfo()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if(player!=null)
+        {
+            lastPosition = player.transform.position;
+        }
+    }
+
     private bool IsBattleOn()
     {
-        if(Random.value <= encounterRate)
+        if(UnityEngine.Random.value <= encounterRate)
         {
             GameManager.Instance.SavePosition(lastPosition);
             SceneManager.LoadScene("BattleScene");

@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 1
   itemName: "\uBAA9\uBD09"
   itemDescription: "\uD2BC\uD2BC\uD55C \uB098\uBB34 \uB9C9\uB300\uAE30."
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 2024628865, guid: 83bf93558b0ec514a95bd6edcd67f7ac, type: 3}
   plusHP: 10
   plusMP: 0
   plusAtk: 2

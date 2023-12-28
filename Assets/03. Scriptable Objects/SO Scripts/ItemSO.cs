@@ -12,7 +12,7 @@ public enum ItemType
     Consumable,
 }
 
-[CreateAssetMenu(fileName = "Item_", menuName = "Player/Item", order = 2)]
+[CreateAssetMenu(fileName = "Item_", menuName = "Item/Item", order = 0)]
 public class ItemSO : ScriptableObject
 {
     public ItemType type;

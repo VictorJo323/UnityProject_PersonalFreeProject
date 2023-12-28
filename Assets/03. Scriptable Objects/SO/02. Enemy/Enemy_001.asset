@@ -15,12 +15,15 @@ MonoBehaviour:
   monsterName: "\uCD08\uB85D\uC2AC\uB77C\uC784"
   monsterDescription: "\uCF67\uBB3C\uCC98\uB7FC \uBB3C\uCEF9\uAC70\uB9AC\uB294 \uBAAC\uC2A4\uD130.
     \uC8FC\uB85C \uC5C9\uACA8\uBD99\uB294 \uACF5\uACA9\uC744 \uAC00\uD574\uC628\uB2E4."
-  monsterImage: {fileID: 0}
+  monsterImage: {fileID: -5816436153592121541, guid: c80534141f80d28489b1ef92f8ff7d99, type: 3}
   level: 1
-  str: 1
+  atk: 0
   def: 1
   foc: 3
   hp: 15
   mp: 0
+  crit: 0
+  agi: 0
   goldDrop: 3
   expDrop: 5
+  skills: []

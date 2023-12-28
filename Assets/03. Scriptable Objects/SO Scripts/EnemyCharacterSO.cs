@@ -28,6 +28,7 @@ public class EnemyCharacterSO : ScriptableObject, IStatusData
     public string Name => monsterName;
 
     public int Hp => hp;
+    public int Mp => mp;
 
     public int Atk => atk;
 
@@ -38,4 +39,6 @@ public class EnemyCharacterSO : ScriptableObject, IStatusData
     public float Crit => crit;
 
     public float Agi => agi;
+
+   
 }

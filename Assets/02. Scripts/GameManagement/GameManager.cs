@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void SavePosition(Vector2 position)
     {
+        Debug.Log(position);
         playerPosition = position;
     }
 

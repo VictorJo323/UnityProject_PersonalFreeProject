@@ -27,6 +27,7 @@ public class PlayerCharacterSO : ScriptableObject, IStatusData
     public string Name => charName;
 
     public int Hp => hp;
+    public int Mp => mp;
 
     public int Atk => atk;
 

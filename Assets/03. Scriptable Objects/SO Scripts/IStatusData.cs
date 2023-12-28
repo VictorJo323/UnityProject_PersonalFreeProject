@@ -6,6 +6,7 @@ public interface IStatusData
 {
     string Name { get; }
     int Hp { get; }
+    int Mp { get; }
     int Atk { get; }
     int Def { get; }
     int Foc { get; }

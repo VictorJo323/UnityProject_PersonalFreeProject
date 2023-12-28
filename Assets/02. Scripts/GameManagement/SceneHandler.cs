@@ -17,5 +17,7 @@ public class SceneHandler : MonoBehaviour
     public void Run()
     {
         Vector2 savedPosition = GameManager.Instance.LoadPosition();
+        SceneManager.LoadScene("MainScene");
+
     }
 }

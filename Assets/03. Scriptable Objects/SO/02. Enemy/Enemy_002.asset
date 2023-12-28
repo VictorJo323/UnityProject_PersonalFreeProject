@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93dffb26f73883429c7df4977b90a0e, type: 3}
   m_Name: Enemy_002
   m_EditorClassIdentifier: 
-  monsterName: "\uB3CC \uC2AC\uB77C\uC784"
+  monsterName: "\uD30C\uB780 \uC2AC\uB77C\uC784"
   monsterDescription: "\uD3C9\uBC94\uD55C \uC2AC\uB77C\uC784\uBCF4\uB2E4 \uB2E8\uB2E8\uD558\uB2E4.
     \uB9E4\uC6B0 \uC9C8\uACA8\uBCF4\uC778\uB2E4."
-  monsterImage: {fileID: 0}
+  monsterImage: {fileID: -8839626087033448230, guid: bfeede70efd14484683f5956b4f1194b, type: 3}
   level: 1
-  str: 1
+  atk: 0
   def: 4
   foc: 1
   hp: 25
   mp: 0
+  crit: 0
+  agi: 0
   goldDrop: 5
   expDrop: 8
+  skills: []

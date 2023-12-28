@@ -16,7 +16,7 @@ MonoBehaviour:
   itemName: "\uC791\uC5C5\uBCF5"
   itemDescription: "\uC5B4\uB5A4 \uC77C\uC744 \uD574\uB3C4 \uB9E4\uC6B0 \uD3B8\uD55C
     \uC637. \uC5B4\uCA50\uC9C0 \uBC2D\uC774 \uAC08\uACE0 \uC2F6\uC5B4\uC9C4\uB2E4."
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 378500023, guid: 83bf93558b0ec514a95bd6edcd67f7ac, type: 3}
   plusHP: 10
   plusMP: 0
   plusAtk: 0

@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterName: "\uBE68\uAC04 \uC2AC\uB77C\uC784"
   monsterDescription: "\uACF5\uACA9\uC801\uC778 \uACBD\uD5A5\uC774 \uC788\uB294 \uC2AC\uB77C\uC784."
-  monsterImage: {fileID: 0}
+  monsterImage: {fileID: 4962874880924457459, guid: d4e8a5c5eececab46942986a743fd7d8, type: 3}
   level: 1
-  str: 3
+  atk: 0
   def: 1
   foc: 2
   hp: 20
   mp: 0
+  crit: 0
+  agi: 0
   goldDrop: 5
   expDrop: 8
+  skills: []
