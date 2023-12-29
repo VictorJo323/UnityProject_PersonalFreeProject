@@ -5,21 +5,21 @@ using UnityEngine;
 
 public class StatHandler : MonoBehaviour
 {
-    private int maxHP;
-    private int maxMP;
-    private int curHP;
-    private int curMP;
+    public int maxHP;
+    public int maxMP;
+    public int curHP;
+    public int curMP;
 
-    private int baseAtk;
-    private int baseDef;
-    private int baseFoc;
-    private float baseCrit;
-    private float baseAgi;
-    private int modAtk = 0;
-    private int modDef = 0;
-    private int modFoc = 0;
-    private float modCrit = 0;
-    private float modAgi = 0;
+    public int baseAtk;
+    public int baseDef;
+    public int baseFoc;
+    public float baseCrit;
+    public float baseAgi;
+    public int modAtk = 0;
+    public int modDef = 0;
+    public int modFoc = 0;
+    public float modCrit = 0;
+    public float modAgi = 0;
 
 
 
@@ -82,6 +82,24 @@ public class StatHandler : MonoBehaviour
         modCrit -= item.plusCrit;
 
         UpdateStat();
+    }
 
+    public IStatusData GetFinalStats()
+    {
+        return new FinalStats(this);
+    }
+
+
+    public PlayerCharacterSO GetCurrentStats()
+    {
+        PlayerCharacterSO currentStats = new PlayerCharacterSO();
+        currentStats.hp = curHP;
+        currentStats.mp = curMP;
+        currentStats.atk = baseAtk + modAtk;
+        currentStats.def = baseDef + modDef;
+        currentStats.foc = baseFoc + modFoc;
+        currentStats.crit = baseCrit + modCrit;
+        currentStats.agi = baseAgi + modAgi;
+        return currentStats;
     }
 }

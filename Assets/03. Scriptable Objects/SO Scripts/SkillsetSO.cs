@@ -23,4 +23,9 @@ public class SkillsetSO : ScriptableObject
             skills.Remove(skill);
         }
     }
+
+    public List<SkillSO> GetSkills()
+    {
+        return skills;
+    }
 }

@@ -25922,6 +25922,7 @@ Transform:
   - {fileID: 499919722}
   - {fileID: 1477674616}
   - {fileID: 733185636}
+  - {fileID: 1633972065}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28245,6 +28246,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619012830}
   m_CullTransparentMesh: 1
+--- !u!1 &1633972064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633972065}
+  - component: {fileID: 1633972066}
+  m_Layer: 0
+  m_Name: PlayerDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633972065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633972064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1121135069}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633972066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633972064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efc921e8e919cf0418b2df59cf5f8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    stats: {fileID: 0}
+    inventory: {fileID: 0}
+    basicAttack: {fileID: 0}
+    skills: {fileID: 0}
+    player: {fileID: 1886062193}
 --- !u!1 &1667866339
 GameObject:
   m_ObjectHideFlags: 0
@@ -29298,7 +29349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886062188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.312, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29435,6 +29486,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7e76ac49ae3804fa644b65fadc77da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHP: 0
+  maxMP: 0
+  curHP: 0
+  curMP: 0
+  baseAtk: 0
+  baseDef: 0
+  baseFoc: 0
+  baseCrit: 0
+  baseAgi: 0
+  modAtk: 0
+  modDef: 0
+  modFoc: 0
+  modCrit: 0
+  modAgi: 0
   statIndicator: {fileID: 1112163444}
 --- !u!114 &1886062196
 MonoBehaviour:

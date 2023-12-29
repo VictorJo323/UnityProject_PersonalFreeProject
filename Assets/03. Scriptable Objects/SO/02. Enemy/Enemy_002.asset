@@ -26,4 +26,7 @@ MonoBehaviour:
   agi: 0
   goldDrop: 5
   expDrop: 8
-  skills: []
+  skills:
+  - {fileID: 11400000, guid: 1f4bd346124ca4048a91169b13fdbfe7, type: 2}
+  - {fileID: 11400000, guid: 84a9e7f52f6c7bd4286781085ac6ad9b, type: 2}
+  - {fileID: 11400000, guid: e62121bd88b0b064f97e56a63e1b2bf7, type: 2}

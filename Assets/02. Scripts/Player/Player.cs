@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public SkillsetSO basicAttack;
     public SkillsetSO skills;
     private StatHandler statHandler;
+    private SkillSO selectedAction;
+    private PlayerDataManager playerDataManager;
 
     private void Start()
     {
@@ -26,10 +28,20 @@ public class Player : MonoBehaviour
         {
             transform.position = Vector2.zero;
         }
+        playerDataManager = PlayerDataManager.Instance;
     }
 
     public void SavePosition()
     {
         GameManager.Instance.SavePosition(transform.position);
+    }
+
+    public void Select(SkillSO action)
+    {
+        selectedAction = action;
+    }
+    public SkillSO ChooseAction()
+    {
+        return selectedAction;
     }
 }
